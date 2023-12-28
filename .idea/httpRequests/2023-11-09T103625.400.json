@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-11-09T02:36:25.647+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/admin/login"
+}
