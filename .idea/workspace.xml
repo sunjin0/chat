@@ -145,7 +145,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -187,9 +187,9 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean install" />
       <command value="mvn clean" />
       <command value="mvn install" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -312,6 +312,9 @@
   <component name="SpringBeansView">
     <option name="showImplicitBeans" value="false" />
   </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="SpringGeneralSettings">
     <option name="allowAutoConfigurationMode" value="true" />
   </component>
@@ -353,7 +356,11 @@
       <workItem from="1703739841289" duration="911000" />
       <workItem from="1703740887885" duration="403000" />
       <workItem from="1703741302945" duration="519000" />
-      <workItem from="1703741824851" duration="1780000" />
+      <workItem from="1703741824851" duration="2096000" />
+      <workItem from="1704777193061" duration="20789000" />
+      <workItem from="1704893001546" duration="4840000" />
+      <workItem from="1705317829324" duration="206000" />
+      <workItem from="1705556837734" duration="6169000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1696476267921</created>
@@ -621,16 +628,6 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

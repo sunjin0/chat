@@ -9,7 +9,7 @@ import com.example.chatuser.entity.User;
 import com.example.chatuser.entity.Userrelationship;
 import com.example.chatuser.mapper.UserrelationshipMapper;
 import com.example.chatuser.service.IUserrelationshipService;
-import com.example.chatuser.util.ParamUtils;
+import com.example.chatuser.service.util.ParamUtils;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;

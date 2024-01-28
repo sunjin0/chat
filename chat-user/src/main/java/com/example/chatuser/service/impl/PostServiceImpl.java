@@ -85,18 +85,6 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
     }
 
     /**
-     * 热度排名
-     *
-     * @param arrayList 数组列表
-     * @return {@link ArrayList}<{@link Integer}>
-     */
-    private String heatRanking(ArrayList<Integer> arrayList) {
-
-        return "new ArrayList<>()";
-    }
-
-
-    /**
      * @param hashMap 封装信息载体
      * @param post    帖子信息
      * @param userId  用户标识

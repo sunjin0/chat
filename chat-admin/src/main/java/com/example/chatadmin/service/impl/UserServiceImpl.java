@@ -80,7 +80,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         LocalDate today = LocalDate.now();
         QueryWrapper<Post> queryWrapper = Wrappers.query();
         queryWrapper.le("publishTime", today);
-        queryWrapper.ge("publishTime", firstDayOfThisYear);  // 大于等于今年第一天
+//        queryWrapper.ge("publishTime", firstDayOfThisYear);  // 大于等于今年第一天
         queryWrapper.select("YEAR(publishTime) as year", "MONTH(publishTime) as month", "COUNT(*) as total");
         queryWrapper.groupBy("YEAR(publishTime)", "MONTH(publishTime)");
         queryWrapper.orderByAsc("YEAR(publishTime)", "MONTH(publishTime)");
