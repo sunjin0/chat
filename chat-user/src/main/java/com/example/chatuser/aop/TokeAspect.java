@@ -14,25 +14,12 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.time.Duration;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Objects;
 
 @Aspect
 @Slf4j
 @Component
 public class TokeAspect {
-    private static final HashMap<String, Boolean> hashMap;
-
-    static {
-        hashMap = new HashMap<>();
-        hashMap.put("register", true);
-        hashMap.put("getCode", true);
-        hashMap.put("registerUpload", true);
-        hashMap.put("changePassword", true);
-        hashMap.put("upLoadVideo", true);
-        hashMap.put("upLoadVoice", true);
-    }
-
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 
@@ -49,7 +36,8 @@ public class TokeAspect {
         log.info("请求方法：" + pjp.getSignature().getName());
         //获取方法名称,如果是注册则放行
         String name = pjp.getSignature().getName();
-        if (hashMap.getOrDefault(name, false)) {
+
+        if (name.equals("register") || name.equals("getCode") || name.equals("registerUpload") || name.equals("changePassword")) {
             return pjp.proceed();
         }
         if (token.split("\\.").length == 1) {
